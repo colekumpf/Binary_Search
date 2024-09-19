@@ -1,4 +1,4 @@
-# Find Palindromes
+# Binary Search
 ## Overview
 This repository provides code and tests that implements a Binary search algorithm to find words not in a sorted tuple of words in **O(N*log(N)) time**. 
 
