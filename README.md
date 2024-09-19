@@ -6,18 +6,19 @@ This repository provides code and tests that implements a Binary search algorith
 The program will return words not in word list. If all words given are in the sorted wordList the program will return an empty tuple.
 
 ## Stipulations
-Any input of length one or two will return None.
-Any non tuple input will return None.
+Inputs (words and wordlist) must be tuples. If they are not the program will return None.
+An empty tuple given for words will return an empty tuple.
+An empty tuple given for wordlist will return words.
+Words are case insensitive. So aBc is treated the same as AbC.
 
 ## To run
-Make sure you have python downloaded on your machine by running "python --version" in the terminal. Then run "python main.py (...)" with your desired input.
+Make sure you have python downloaded on your machine by running "python --version" in the terminal. Then run "python main_test.py (...)" to see all the tests pass.
 
-An example running statement would be "python main.py ('a','b','a')" to which the program would return: 
+To run with custom input comment out the tests in main_test.py and write a line like so "print(new_words((tuple_x), (tuple_y)))" to see the result of your calculation.
 
-('a','a') 
+An example test statement would be "print(new_words(('aBC','123','456','a1b2c3','b2c3d4'),('456','Abc','B2C3D4')))" to which the program would return:  
+
+('123', 'a1b2c3')
 
 ## To Run Tests 
 Run "python main_test.py".
-
-*Note the first line in the test will return none unless you give it input for palindrome testing in which case it will return the same as main.py.
-
